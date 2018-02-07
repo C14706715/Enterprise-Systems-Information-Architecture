@@ -1,0 +1,23 @@
+<Catalogue>
+  <CD>
+    <TITLE>I Forgot Where We Were</TITLE>
+    <ARTIST>Ben Howard</ARTIST>
+    <COMPANY>Ben Howard and Co.</COMPANY>
+    <PRICE>£13.99</PRICE>
+    <YEAR>2014</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Finesse</TITLE>
+    <ARTIST>Bruno Mars</ARTIST>
+    <COMPANY>Sonic Co.</COMPANY>
+    <PRICE>£18.99</PRICE>
+    <YEAR>2017</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Loyal</TITLE>
+    <ARTIST>Chris Brown</ARTIST>
+    <COMPANY>Chris Brown and Co.</COMPANY>
+    <PRICE>£15.49</PRICE>
+    <YEAR>2015</YEAR>
+  </CD>
+</Catalogue>

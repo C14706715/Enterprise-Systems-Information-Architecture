@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs= "orderschema">
+    <xs:element name = "note">
+        <xs:sequence>
+            <xs:element name="person" type="xs:string"/>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="address" type="xs:string"/>
+                <xs:element name="city" type="xs:string"/>
+                <xs:element name="country" type="xs:string"/>
+            </xs:sequence>
+            <xs:sequence>
+                <xs:element name="item1-name" type="xs:string"/>
+                <xs:element name="item1-title" type="xs:string"/>
+                <xs:element name="item1-id" type="xs:integer" "xs:minInclusice value='0'"/>
+                <xs:element name="item1-note" type="xs:string"/>
+                <xs:element name="item1-quantity" type="xs:string"/>
+                <xs:element name="item1-price" type="xs:string"/>
+            </xs:sequence>
+            <xs:sequence>
+                <xs:element name="item2-name" type="xs:string"/>
+                <xs:element name="item2-title" type="xs:string"/>
+                <xs:element name="item2-id" type="xs:integer" "xs:minInclusice value='0'"/>
+                <xs:element name="item2-note" type="xs:string"/>
+                <xs:element name="item2-quantity" type="xs:string"/>
+                <xs:element name="item2-price" type="xs:string"/>
+            </xs:sequence>
+        </xs:sequence>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,30 @@
+<Order>
+  <Company_From>Jurys Inns Christchurch</Company_From>
+  <Company_To>Hilton Garden Inn Custom House</Company_To>
+  <Customer_ID>
+    <Order_ID>12321</Order_ID>
+    <Customer_Name>Jake Young</Customer_Name>
+    <Ship_To_Address>
+      <Name>Hilton Garden Inn Custom House</Name>
+      <Address_Line_1>Custom House Quay</Address_Line_1>
+      <Address_Line_2>Dublin 1</Address_Line_2>
+      <Address_Line_3></Address_Line_3>
+      <City>Dublin</City>
+      <Country>Ireland</Country>
+    </Ship_To_Address>
+    <Items>
+      <Item_1>
+        <Item_Title>Coffe Cups</Item_Title>
+        <Item_ID>99988</Item_ID>
+        <Quantity>300</Quantity>
+        <Price>$32.90</Price>
+      </Item_1>
+      <Item_2>
+        <Item_Title>Napkins</Item_Title>
+        <Item_ID>786876</Item_ID>
+        <Quantity>600</Quantity>
+        <Price>$25.00</Price>
+      </Item_2>
+    </Items>
+  </Customer_ID>
+</Order>

@@ -1,0 +1,31 @@
+<html>
+<body>
+</body>
+<script>
+    ///load XML file 
+    var doc = new ActiveSObject("MSXML2.DOMDocument.6.0");
+    doc.async = false;
+    doc.validateOnParse = true;
+    doc.load("order.xml");
+    
+    ///Load Schema File
+    var nameSpace = doc,documentElement.namespaceURI;
+    var xmlSchema = new ActiveXObject("MSXML2.XMLSchemaCache.6.0");
+    xmlSchema.add(nameSpace, "order.xsd");
+    doc.schemas = xmlSchema;
+    
+    //Parse/Validate XML file
+    doc.load("order.xml");
+    var error = doc.parseError;
+    if(error!=""){
+        alert(error.reason);
+    }
+    
+    //write HTML output
+    document.write("XML Root Tag Name:" + doc.documentElement.tagName + "<br/><br/>");
+    
+    //Use the following 
+    //rootChildren = doc.documentElement.childNodes
+    //rootChildren[i].firstChild.nodeValue
+</script>
+</html>

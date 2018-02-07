@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.dit.ie" xmlns="http://www.dit.ie" elementFormDefault="qualified">
+	<xs:element name="invoice">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="invoiceNumber">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="invoiceDate">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="invoiceTotal">
+					<xs:simpleType>
+						<xs:restriction base="xs:decimal">
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="issuedBy">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="billTo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="address" type="xs:string"/>
+							<xs:element name="city" type="xs:string"/>
+							<xs:element name="country" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="item">
+					<xs:complexType>
+						<xs:sequence>
+								<xs:element name="itemName" type="xs:string"/>
+								<xs:element name="id" type="xs:string"/>
+								<xs:element name="price" type="xs:decimal"/>
+								<xs:element name="quantity" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="paymentInformation">
+					<xs:complexType>
+						<xs:sequence>
+								<xs:element name="name" type="xs:string"/>
+								<xs:element name="IBAN" type="xs:string"/>
+								<xs:element name="BIC" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,30 @@
+<html>
+<body>
+    <p id="xmlbody"></p>
+</body>
+
+<script type='text/javascript'>
+    /// Load XML file...
+    var doc = new XMLHttpRequest();
+    doc.async = false;
+    doc.load("order.xml");
+
+    var error = doc.parseError;
+    if (error != "")
+    {
+     alert(error.reason);
+    }
+    /// Write HTML output...
+    document.write("<b>XML Root Tag Name: " + doc.documentElement.tagName + "<br/><br/></b>");
+    var rootChildren = doc.documentElement.childNodes;
+    var orderTotal = 0.00;
+    /// Loop all elements...
+    for (i=0; i<rootChildren.length; i++) {
+        var x = doc.documentElement.firstChild;
+        var y = x.nodeValue;
+        document.write(y);
+    }
+    ///document.write("<br/><br/><i><b>Order Total: " + orderTotal.toFixed(2) + "</b></i>");
+</script>
+</html>
+
