@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="note.xsl"?>
+<notes>
+    <note>
+        <to>Tove</to>
+        <from>Jani</from> <heading>Reminder</heading>
+        <body>Don't forget me this weekend!</body>
+    </note>
+    <note>
+        <to>Jake</to>
+        <from>Marty</from> <heading>Reminder</heading>
+        <body>Call the Doctors</body>
+    </note>
+    <note>
+        <to>Marty</to>
+        <from>Jake</from> <heading>Reminder</heading>
+        <body>Bring passport to airport</body>
+    </note>
+</notes>
