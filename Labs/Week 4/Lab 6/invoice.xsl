@@ -1,22 +1,16 @@
 <?xml version="1.0"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output method="html"/>
-    <xsl:template match="/">
-        <b>Invoice Number: <xsl:value-of select="invoice/invoice_number"/></b><br/><br/>
-        <b>Invoice Date: <xsl:value-of select="invoice/invoice_date"/></b><br/><br/>
-    
-        <xsl:apply-templates select="invoice/items/item">
-         <xsl:sort select="quantity"/>
-            <b>Item Name: <xsl:value-of select="item_name"/></b><br/><br/>
-            Price: <xsl:value-of select="price"/><br/>
-            <xsl:if quantity="$quantity &gt; 1">
-            Quantity: <xsl:value-of select="quantity"/><br/><br/>
-                </xsl:if>
-        </xsl:apply-templates>
-
-        <b>Payment Information: <xsl:value-of select="invoice/payment_information"/></b><br/>
-        
-        <b>http://www.dit.ie/</b>
-    </xsl:template>
+<xsl:output method="html"/>
+	<xsl:template match="/">
+		<h1>Invoice Number: <xsl:value-of select="invoice/invoice_number"/></h1>
+		<h2>Invoice Date: <xsl:value-of select="invoice/invoice_date"/></h2>
+		<xsl:for-each select="invoice/item">
+			<h4>Item: <xsl:value-of select="item_name"/></h4>
+			<div>
+				Price: <xsl:value-of select="price"/><br/>
+				Quantity: <xsl:value-of select="quantity"/><br/>
+			</div>
+			<br/>
+		</xsl:for-each>
+	</xsl:template>
 </xsl:stylesheet>
-
